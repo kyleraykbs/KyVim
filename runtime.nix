@@ -1,17 +1,20 @@
-{ fzf
-, git
-, lazygit
-, lua-language-server
-, nil
-, ripgrep
-, tree-sitter
-}:
+{ pkgs, ...}:
+with pkgs;
 [
   fzf
   git
   lazygit
-  lua-language-server
   nil
   ripgrep
   tree-sitter
+  fd
+  wl-clipboard
+ 
+  #LANGS
+  lua
+
+  #LSPs
+  nixd
+  nodePackages.pyright
+  lua-language-server
 ]

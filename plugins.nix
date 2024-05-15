@@ -6,18 +6,24 @@ let
   inherit (vimUtils) buildVimPlugin;
 in
 with vimPlugins; [
-  # CMP
-  nvim-lspconfig
-  cmp-nvim-lsp
-  cmp-buffer
-  cmp-path
-  cmp-cmdline
+  # CMP / LSP 
+  nvim-treesitter.withAllGrammars
+  trouble-nvim
   nvim-cmp
+  cmp-nvim-lsp
+  luasnip
+  lsp-zero-nvim
+  nvim-lspconfig
 
-  toggleterm-nvim
-
-  telescope-fzf-native-nvim
+  # Fuzzy Find
+  plenary-nvim
   telescope-nvim
+ 
+  # Helpers
+  which-key-nvim
+
+  # Utils
+  toggleterm-nvim
 
   # (buildVimPlugin {
   #   pname = "quickmath-nvim";

@@ -7,11 +7,20 @@
   description = "Kyle's NeoVIM config.";
   outputs = inputs: with inputs; let 
     eachSystem = nixpkgs.lib.genAttrs (import systems);
-
+   
     luaInputs = [
       "keymaps.lua"
-
       "base.lua"
+      "lang-overrides.lua"
+
+      #Plugins
+      "plugins/toggleterm.lua"
+      "plugins/telescope.lua"
+      "plugins/whichkey.lua"
+
+      #LSP
+      "plugins/lsp/cmp.lua"
+      "plugins/lsp/lspzero.lua"
     ];
 
     vimInputs = [ ];
@@ -38,7 +47,7 @@
 
         neovimConfigs = callPackage ./config { };
         neovimPlugins = callPackage ./plugins.nix { };
-        neovimRuntime = callPackage ./runtime.nix { };
+        neovimRuntime = callPackage ./runtime.nix { pkgs = pkgs; };
 
         resolvePaths = root: paths: map (relpath: "${root}/${relpath}") paths;
 
