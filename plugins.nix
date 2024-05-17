@@ -24,6 +24,13 @@ with vimPlugins; [
 
   # Utils
   toggleterm-nvim
+  neo-tree-nvim  
+
+  # Theming
+  dressing-nvim
+  nvim-web-devicons
+  wilder-nvim
+  lspkind-nvim
 
   # (buildVimPlugin {
   #   pname = "quickmath-nvim";

@@ -15,6 +15,9 @@ vim.opt.mouse = "" -- Goodbye mouse...
 
 -- Theme
 vim.opt.signcolumn = "no"
+vim.cmd('highlight Pmenu ctermbg=black guibg=black ctermfg=white guifg=white')
+vim.cmd('highlight PmenuSel ctermbg=black guibg=black ctermfg=magenta guifg=magenta')
+vim.cmd('highlight PmenuExtraSel ctermfg=lightblue guifg=lightblue cterm=underline')
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true

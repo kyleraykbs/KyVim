@@ -17,6 +17,9 @@
       "plugins/toggleterm.lua"
       "plugins/telescope.lua"
       "plugins/whichkey.lua"
+      "plugins/dressing.lua"
+      "plugins/wilder.lua"
+      "plugins/neotree.lua"
 
       #LSP
       "plugins/lsp/cmp.lua"

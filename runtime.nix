@@ -17,4 +17,7 @@ with pkgs;
   nixd
   nodePackages.pyright
   lua-language-server
+
+  # Other
+  fira-code-nerdfont
 ]
