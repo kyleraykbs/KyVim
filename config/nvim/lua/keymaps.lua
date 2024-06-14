@@ -26,6 +26,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 vim.api.nvim_set_keymap('n', '\\', ':Neotree position=float <CR>', { noremap = true, silent = true })
 
+vim.keymap.set("n", "<leader>ca1", "<cmd>CellularAutomaton make_it_rain<CR>")
+vim.keymap.set("n", "<leader>ca2", "<cmd>CellularAutomaton game_of_life<CR>")
+vim.keymap.set("n", "<leader>ca3", "<cmd>CellularAutomaton scramble<CR>")
 -- -- save current buffer
 -- vim.keymap.set('n', '<leader>w', '<Cmd>w<CR>', { noremap = true, silent = true })
 

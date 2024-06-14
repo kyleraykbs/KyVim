@@ -32,6 +32,17 @@ with vimPlugins; [
   wilder-nvim
   lspkind-nvim
 
+  (buildVimPlugin {
+    pname = " cellular-automaton.nvim";
+    version = "latest";
+    src = fetchFromGitHub {
+      owner = "Eandrju";
+      repo = "cellular-automaton.nvim";
+      rev = "b7d056dab963b5d3f2c560d92937cb51db61cb5b";
+      hash = "sha256-szbd6m7hH7NFI0UzjWF83xkpSJeUWCbn9c+O8F8S/Fg=";
+    };
+  })
+
   # (buildVimPlugin {
   #   pname = "quickmath-nvim";
   #   version = "2023-03-12";
