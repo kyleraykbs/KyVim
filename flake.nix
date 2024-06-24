@@ -14,6 +14,7 @@
       "lang-overrides.lua"
 
       #Plugins
+      "plugins/treesitter.lua"
       "plugins/toggleterm.lua"
       "plugins/telescope.lua"
       "plugins/whichkey.lua"
