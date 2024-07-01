@@ -19,6 +19,9 @@ vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
 
+vim.keymap.set('n', '<Tab>', '<cmd>:bnext<CR>', { noremap = true })
+vim.keymap.set('n', '<S-Tab>', '<cmd>:bprev<CR>', { noremap = true })
+
 vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
@@ -29,6 +32,7 @@ vim.api.nvim_set_keymap('n', '\\', ':Neotree position=float <CR>', { noremap = t
 vim.keymap.set("n", "<leader>ca1", "<cmd>CellularAutomaton make_it_rain<CR>")
 vim.keymap.set("n", "<leader>ca2", "<cmd>CellularAutomaton game_of_life<CR>")
 vim.keymap.set("n", "<leader>ca3", "<cmd>CellularAutomaton scramble<CR>")
+
 -- -- save current buffer
 -- vim.keymap.set('n', '<leader>w', '<Cmd>w<CR>', { noremap = true, silent = true })
 
